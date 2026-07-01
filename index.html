@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a> |
+    <a href="/messages.html">Messages</a>
+  </nav>
+
+  <h1>Home page</h1>
+  <p>Welcome! Click the link above to go to the Messages page.</p>
+
+  <!-- Button navigation (vanilla JS) -->
+  <button id="go">Go to Messages</button>
+
+  <script>
+    document.getElementById("go").onclick = () => {
+      window.location.href = "/messages.html";
+    };
+  </script>
+</body>
+</html>
